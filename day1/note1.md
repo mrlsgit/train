@@ -1,4 +1,5 @@
-<center> ** class 1 ** </center>
+##<center> class 1</center>
+
 1. 基础素质：
    1. 界面
    2. 数据
@@ -70,4 +71,3 @@
    + 文档声明 html5 版本
 3. `<head></head>`
    + html的头部描述
-4. 
