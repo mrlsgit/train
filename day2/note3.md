@@ -1,12 +1,12 @@
 #<center>第二天</center>
 ---
-##<center>实体字符</center>
-##语义结构：
+##实体字符：
 1. `&+xxx+;`
     + >空格：`&nbsp;`
 1. 常见实体字符：
     + `< = &lt;`
     + `> = &gt;`
+---
 ## 表格标签：
 1. 常用属性：
    + `border`
@@ -43,3 +43,45 @@
    + `<ol> type` 值取`1 a A i I`
    + `<ul> type` 值取  `disc square circle` ： 实心点 正方形 空心圆
 ---
+##表单标签：
+1. `<form>`标签： 所有表单标签必须被`<form>`包裹
+2. `<input>`标签
+>
+```
+<form class="" action="index.html" method="post">
+  <input type="text" name="" value="">
+</form>
+```
+>效果：
+<form>
+  <input>
+</form>
+
+  + `type` 可选值
+    + `password`
+    + `submit` 提交按钮 配合`value`可以定义按钮显示文字
+    + `reset` 重置表单，回到表单初始状态，不是清空，同样可以配合`value`
+    + `radio` 单选框，配合`name`属性可以得到只能选一个（相同`name`的只能选一个）。默认值设置：`checked=""` 或`checked` 不用赋值，哪怕没等号都可以，只要存在就是默认勾选
+    + `checkbox` 复选框 同`radio`
+    + >`ctrl + a` 右键 $\rightarrow$ 重排代码格式
+  + `placeholder` 占位符
+  ```
+  <input placeholder="请输入六位密码">
+  ```
+  + `value`默认值
+  + `maxlength` 最大输入长度，一般用于密码框
+##下拉框
+1. `<section>`
+1. `<option>`
+   + `value`
+##文本区域
+1. `<textarea>`
+   + `rows` 显示的行数
+   + `cols` 显示的列数 超出后会显示滚动条
+   + 在内容区域设置默认值，在`textarea`内容区域，空格是会被打印下来的。
+---
+### 1.行内标签 ： 没有自己的高度宽度，不会独自占用一行
+1. a span u small...
+### 2.块级标签 ： 一些出来就会独自占一行
+1. p h div...
+hr br 不用分类 语义标签
