@@ -4,8 +4,8 @@
 1. `&+xxx+;`
     + >空格：`&nbsp;`
 1. 常见实体字符：
-    + `< = &lt;`
-    + `> = &gt;`
+    + `<` $\rightarrow$ `&lt;`
+    + `>` $\rightarrow$ `&gt;`
 ---
 ## 表格标签：
 1. 常用属性：
@@ -80,8 +80,14 @@
    + `cols` 显示的列数 超出后会显示滚动条
    + 在内容区域设置默认值，在`textarea`内容区域，空格是会被打印下来的。
 ---
+# <center>作业</center>
 ### 1.行内标签 ： 没有自己的高度宽度，不会独自占用一行
-1. a span u small...
-### 2.块级标签 ： 一些出来就会独自占一行
-1. p h div...
-hr br 不用分类 语义标签
+```
+a span strong b small iframe
+u em img select textarea input td th
+```
+### 2.块级标签 ： 一些出来就会独自占一行，块级元素可以用css 定义高宽
+```
+div p table h1-h6
+ul li ol form tr
+```
