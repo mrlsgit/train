@@ -1,3 +1,21 @@
 body{
   margin:0px;
 }
+.mydiv{
+  height:60px;
+  background-color:#d5e;
+}
+.mydiv1{
+  width:200px;
+  height:200px;
+  background-color:#d45;
+  position:relative;
+  top:50px;
+  left:30px;
+  right:30px;
+  botttom:50px;
+}
+*{
+  padding:0;
+  margin:0;
+}
