@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动可以让元素脱离基本文档</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			#box1 {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				float: right;
+			}
+			#box2 {
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+			}
+			#box3 {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box3"></div>
+		<div style="width: 50%;"><div id="box1"></div></div>
+		<div style="clear: both;"></div>
+		<div id="box2"></div>
+		
+	</body>
+</html>

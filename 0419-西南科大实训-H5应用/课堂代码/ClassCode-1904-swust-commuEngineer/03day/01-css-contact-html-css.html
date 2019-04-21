@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>html和css的关联方式</title>
+		<!-- 3、在页外写CSS文件,link-href -->
+		<link rel="stylesheet" type="text/css" href="./01-css-contact-html-css.css"/>
+		<!-- 2、页内嵌入样式,style标签 -->
+		<style type="text/css">
+			div {
+				width: 150px;
+				height: 100px;
+				background-color: red;
+				border: 10px solid purple;
+			}			
+			p {
+				text-decoration: underline;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 1、行内写样式，style属性-通用属性， -->
+		<!-- style="width: 150px;height: 100px;background-color: red;" -->
+		<div ></div><div ></div><div ></div>
+		
+		<!-- style="text-decoration: underline;color: blue;" -->
+		<p >
+			未连接到互联网1
+			请试试以下办法：
+
+			检查网线、调制解调器和路由器
+			重新连接到 Wi-Fi 网络
+			运行 Windows 网络诊断
+			DNS_PROBE_FINISHED_NO_INTERNET
+		</p>
+		<p >
+			未连接到互联网2
+			请试试以下办法：
+		
+			检查网线、调制解调器和路由器
+			重新连接到 Wi-Fi 网络
+			运行 Windows 网络诊断
+			DNS_PROBE_FINISHED_NO_INTERNET
+		</p>
+		
+		
+	</body>
+</html>

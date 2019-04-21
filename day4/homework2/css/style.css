@@ -1,0 +1,48 @@
+body{
+  background-color: #E9ECF0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.container{
+  width:70%;
+  height:500px;
+  margin:auto;
+  padding: 0px;
+  background-color: white;
+}
+table{
+  text-align: center;
+  width: 100%;
+  height:50%;
+  margin: 8px;
+  margin-left: 1px;
+}
+td{
+  border-radius: 8px;
+  padding-bottom: 40%;
+  background-color: gray;
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#img1{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_love.png);
+}
+#img2{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_parent.png);
+}
+#img3{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_friend.png);
+}
+#img4{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_birthday.png);
+}
+#img5{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_profess.png);
+}
+#img6{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_business.png);
+}
+#img7{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_anniversary.png);
+}

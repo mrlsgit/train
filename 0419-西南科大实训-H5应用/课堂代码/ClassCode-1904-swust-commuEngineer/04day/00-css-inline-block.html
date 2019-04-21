@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>行内元素/块级元素/行内块级元素</title>
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				border: 1px solid blue;
+				display: inline-block;
+				/* display: block/inline/inline-block; */
+			}
+			
+			a {
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+				display: block;
+				text-align: center;
+				/* height==line-height时让单行文本垂直方向对齐 */
+				line-height: 100px;
+				color: #800080;
+				/* 去除下划线 */
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<a href="#">西南科大西南科大西南科大西南科大西南科大</a>
+		
+		
+		
+		
+	</body>
+</html>

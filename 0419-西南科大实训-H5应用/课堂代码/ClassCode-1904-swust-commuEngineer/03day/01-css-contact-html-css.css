@@ -1,0 +1,11 @@
+div {
+	width: 150px;
+	height: 100px;
+	background-color: red;
+	border: 10px solid purple;
+}
+
+p {
+	text-decoration: underline;
+	color: blue;
+}

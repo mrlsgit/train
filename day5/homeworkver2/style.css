@@ -1,0 +1,93 @@
+body{
+  background-color: #E9ECF0;
+}
+.item-container{
+  width:612.571px;
+  height:30rem;
+  background-color: white;
+  margin:auto;
+}
+.item-container > p{
+  text-align: center;
+  font-size:27px;
+  font-weight: 500;
+  padding:20px 0;
+  margin-bottom: 0px;
+}
+.item{
+  margin:0 9px;
+  background-color: white;
+  box-shadow: 3px 3px 40px rgb(208, 235, 210);
+  border-radius: 8px;
+}
+.item-common{
+  display: inline-block;
+  width:50%;
+  height:329px;
+}
+.item-img{
+  float:left;
+  background-image: url(https://img01.hua.com/uploadpic/newpic/9010966.jpg);
+  background-size: 100% 100%;
+}
+.item-des{
+  box-sizing: border-box;
+  padding:25px;
+}
+.item-title-font{
+  color:#232628;
+  font-weight: lighter;
+}
+.item-title{
+  display: block;
+  font-size:24px;
+
+}
+.item-title-detail{
+  display: block;
+  font-size: 20px;
+}
+.item-type{
+  width:70px;
+  text-align: center;
+  font-size:15px;
+  border:1px solid #FF734C;
+  border-radius: 10px;
+  color:#FF734C;
+  margin:10px 0;
+}
+.item-slogan{
+  padding: 18px 0;
+  border-top:1px solid #E9ECF0;
+  border-bottom:1px solid #E9ECF0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.item-sell{
+  position:relative;
+  bottom: -60px;
+}
+.item-price{
+  color:#FF734C;
+  font-size: 24px;
+  font-weight: bold;
+}
+.item-price del{
+  font-weight: normal;
+  font-size:15px;
+  margin-left: 10px;
+  color:gray;
+}
+.shopping-cart{
+  float:right;
+  background-image: url('./shopping cart.png');
+  background-size: 100% 100%;
+  width:35px;
+  height:35px;
+  margin-top:10px;
+}
+.have-sell{
+  display: block;
+  color:gray;
+  font-weight: 600;
+}

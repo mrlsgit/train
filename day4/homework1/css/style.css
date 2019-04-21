@@ -1,0 +1,62 @@
+body{
+  background-color: #E9ECF0;
+}
+.container{
+  font-size: 24px;
+  font-weight: bold;
+  margin:auto;
+  width:70%;
+  height:500px;
+  background-color: gray;
+}
+.row1 .row2{
+  margin:5px;
+  display:block;
+  background-color: violet;
+}
+.row1 div{
+  display: inline-block;
+  margin:4px;
+  width:30.3%;
+  height:200px;
+  border-radius: 4px;
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  padding-top: 20px;
+}
+.row2{
+  align:center;
+  width:100%;
+}
+.row2 div{
+  display: inline-block;
+  margin:4px;
+  width:22%;
+  height:150px;
+  border-radius: 4px;
+  background-size: 100% 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+#img1{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_love.png);
+}
+#img2{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_parent.png);
+}
+#img3{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_friend.png);
+}
+#img4{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_birthday.png);
+}
+#img5{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_profess.png);
+}
+#img6{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_business.png);
+}
+#img7{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_anniversary.png);
+}

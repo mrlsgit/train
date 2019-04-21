@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>界面互动小游戏</title>
+		<style type="text/css">
+			#game {
+				width: 220px;
+				height: 190px;
+				text-align: center;
+				line-height: 200px;
+				background-image: url(timg.jpg);
+				background-position: center;
+				background-size: 100% 100%;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="game">
+			
+		</div>
+		<button type="button">抽奖！</button>
+		
+		<script type="text/javascript">
+			var arr=["陈秋林","高建","黄严","冷勇","许家铭","朱睿","田渠","杨萍"];			
+			var lenth=arr.length;
+			
+			var btn=document.getElementsByTagName("button")[0];
+			var mydiv=document.getElementsByTagName("div")[0];
+			btn.onclick=function(){
+				setTimeout(function(){
+					setInterval(function(){
+						index=Math.random()*lenth;
+						
+						mydiv.innerText=arr[index];
+					},100)
+				},1000)
+				
+				setInterval(function(){})
+			}
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

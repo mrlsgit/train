@@ -26,4 +26,89 @@
    1. `内容宽高`
    1. `内外边距`
    1. `边框线`
-1. **文档内浮动**
+     + `border-radius`边框半径
+
+---
+###作业
+1. 文件1
+```
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>homeword ver1</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <div class="container">
+        <table>
+            <tr>
+                <td id="img1">送恋人</td>
+                <td id="img2">送长辈</td>
+                <td id="img3">送朋友</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+                <td id="img4">生日祝福</td>
+                <td id="img5">表白求婚</td>
+                <td id="img6">开业商务</td>
+                <td id="img7">周年纪念</td>
+            </tr>
+        </table>
+      </div>
+  </body>
+</html>
+```
+2. 文件2style.css(同级目录)：
+```
+body{
+  background-color: #E9ECF0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.container{
+  width:70%;
+  height:500px;
+  margin:auto;
+  padding: 0px;
+  background-color: white;
+}
+table{
+  text-align: center;
+  width: 100%;
+  height:50%;
+  margin: 8px;
+  margin-left: 1px;
+}
+td{
+  border-radius: 8px;
+  padding-bottom: 40%;
+  background-color: gray;
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#img1{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_love.png);
+}
+#img2{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_parent.png);
+}
+#img3{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_friend.png);
+}
+#img4{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_birthday.png);
+}
+#img5{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_profess.png);
+}
+#img6{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_business.png);
+}
+#img7{
+  background-image: url(https://img02.hua.com/m/home/img/m_home_use_anniversary.png);
+}
+
+```
