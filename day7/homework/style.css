@@ -1,0 +1,56 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background-color:#f6f6f6;
+}
+.container{
+  width:90vw;
+  margin:0 auto;
+  max-width: 650px;
+  background-color: gray;
+}
+.container .header{
+  width:100%;
+  max-width: inherit;
+  height:3rem;
+}
+.header .left{
+  float:left;
+}
+.header .right{
+  float:right;
+  padding:10px auto;
+}
+.header .left .logo{
+  display:inline-block;
+  width: 48px;
+  height:22px;
+  background-image: url(./douban.png);
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  margin-right:10px;
+}
+.header .left .search{
+  display: inline-block;
+  height:18.28571px;
+  width:24.57143px;
+  background-image: url(./search.png);
+  background-size: 100% 100%;
+}
+.header .right .open{
+  text-decoration: none;
+  font-size:13px;
+  display: inline-block;
+  width:75px;
+  height:13px;
+  padding:8px 13px;
+  float:right;
+  color:white;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 500;
+  background-color:#00b600;
+  border-radius: 6px;
+  line-height: 1;
+}
