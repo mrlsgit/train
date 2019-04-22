@@ -1,0 +1,211 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.head{
+  height:44px;
+  background-color:#0073b4;
+  color:white;
+}
+.head-center{
+  width:69.5rem;
+  margin:0 auto;
+}
+.head-left{
+  list-style:none;
+  width:210px;
+  height:44px;
+  float:left;
+}
+.head-left li:hover, .head-right li:hover{
+  text-decoration: underline;
+  color: rgb(201, 200, 197);
+}
+.head-left li , .head-right li,.head-left span{
+  float:left;
+  line-height:44px;
+  font-size:12px;
+  text-decoration:none;
+  padding:0 2px;
+}
+.head-right{
+  list-style:none;
+  float:right;
+}
+.head-right a{
+  color:red;
+  text-decoration:none;
+}
+.advertise{
+  height:8.05rem;
+  background-color: #ececec;
+}
+.adv-center{
+  width: 69.5rem;
+  margin: 0 auto;
+  padding-top:15px;
+  background-image: url(./imgs/logo_bg.jpg);
+  background-size:100% 100%;
+  position: relative;
+}
+.adv-left{
+  width:397px;
+  height:96px;
+  background-image:url(./imgs/logo_1.png);
+  background-size:100% 100%;
+}
+.adv-right{
+  width:300px;
+  position:absolute;
+  height:32px;
+  bottom:20px;
+  right:0px;
+}
+.adv-right input{
+  height:32px;
+  width:243px;
+  padding:0px;
+  margin:0px;
+  padding-left:7px;
+  border:1px solid #b8b8b8;
+  border-right:none;
+}
+.search-icon{
+  background-image: url(./imgs/main-t-161108_07.jpg);
+  display: inline-block;
+  height:32px;
+  width:37px;
+  margin-bottom: -12.5px;
+  border:1px solid #b8b8b8;
+  border-left:none;
+}
+.fonction-sector{
+  height:57px;
+}
+.center{
+  margin: 0 auto;
+  height:inherit;
+  width:1100px;
+}
+.center > ul > li{
+  list-style: none;
+  float:left;
+  height:57;
+  padding:0px;
+  color:#333;
+  text-align:center;
+}
+.center >  ul  li  a{
+  text-decoration:none;
+  color:inherit;
+  font-size:18px;
+  padding: 16.5px 4px;
+  display:block;
+  width:90px;
+  height:inherit;
+}
+.center >ul > li a:hover{
+  background-color: #0073b4;
+  color:white;
+}
+.fonction-sector ul  li:hover .innerul{
+  display:block;
+  background-color:#0073a4;
+}
+.innerul{
+  position:relative;
+  z-index: 1;
+  display: none;
+}
+.innerul li{
+  background-color: #1d8eb8;
+  padding:12px;
+  text-align:center;
+  list-style:none;
+  color:white;
+  font-size:18px;
+}
+.innerul li:hover{
+  background-color:#0073b4;
+}
+.main-pic {
+  width:100%;
+  background-color:#ececec;
+  height:413px;
+  z-index: -1;
+}
+.center-pic{
+  position:relative;
+  width:1300px;
+  height:inherit;
+  margin:0 auto;  
+}
+.center-pic .pic1{
+  margin:0 auto;
+  width:inherit;
+  height:inherit;
+  background-size:100% 100%;
+  background-image: url(http://www.swust.edu.cn/_upload/article/images/4d/33/0cd1161a46778cf54fce52ab9298/a4253502-f42c-4ff2-998d-68d348a6fdc6.jpg);
+}
+.main-pic  .prev{
+  height:62px;
+  width:57px;
+  background-image:url(http://www.swust.edu.cn/_upload/customPortletMode/00/c3/195/images/prev.png);
+  background-size:100% 100%;
+  position: absolute;
+  top : calc(50% - 31px);
+  left : 1rem;
+}
+.center-pic .next{
+  transform:rotate(180deg);
+  left: calc(100% - 1rem - 57px);
+}
+.center-pic .bottom-bar{
+  width:1150px;
+  height:45px;
+  position: absolute;
+  bottom:0px;
+  left: calc((100% - 1150px) / 2);
+  background-color:#0073b4;
+}
+.bottom-bar .prev{
+  position: absolute;
+  top:0px;
+  left:5px;
+  margin:0px;
+  height:45px;
+  width:14px;
+  background-size:70% 70%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-image: url(http://www.swust.edu.cn/_upload/customPortletMode/00/c3/195/images/prev.png);
+}
+.bottom-bar .next{
+  transform:rotate(180deg);
+  left: calc(100% - 14px - 3px);
+}
+.bottom-bar > .month{
+  left: 30px;
+  line-height: 45px;
+  font-weight:bold;
+  background-image: none;
+  width:50px;
+  color:white;
+}
+.bottom-bar .month-day{
+  list-style: none;
+  color:gray;
+  width:90%;
+  height:inherit;  
+  line-height: 45px;
+  margin-left:10%;
+}
+.month-day li{
+  width: calc( 90% / 31);
+  float:left;
+  text-align: center;
+}
+.month-day li:hover{
+  color:white;
+  background-color:rgb(201, 200, 197);
+}

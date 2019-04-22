@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>隐藏元素</title>
+    <style>
+      ul{list-style:none}
+      ul li{
+
+        float:left;
+        height:57px;
+        width:99px;
+        line-height:57px;
+        text-align:center;
+        color:#ccc;
+        font-size:18px;
+        border-radius: 0 3rem 0px 3rem;
+      }
+      .myul>li:hover{
+        background-color:#fb8;
+        box-shadow: 0 0 .7rem .5rem #fb8 ;
+        color:#fff;
+      }
+      .innerul li{
+        width:140px;
+        display:none;
+      }
+      .myul>li:hover li{
+        display:block;
+        background-color:blue;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+      <ul class="myul">
+        <li>aaaa1</li>
+        <li>
+          <div>
+            aaaa2
+              <ul class="innerul">
+                <li>aaa21</li>
+                <li>aaa22</li>
+              </ul>
+          </div>
+        </li>
+        <li>aaaa3</li>
+        <li>aaaa4</li>
+        <li>aaaa5</li>
+        <li>aaaa6</li>
+        <li>aaaa7</li>
+        <li>aaaa8</li>
+      </ul>
+      <div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+        <div>aaaaa</div>
+      </div>
+  </body>
+</html>
