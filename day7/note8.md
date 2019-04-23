@@ -28,3 +28,162 @@
 2. 首页
 3. 专门介绍的页面
 4. 不用全部写，只需要写特征页面
+---
+1. html文件
+```
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>第七天作业</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+              <div class="left">
+                  <a href="#" class="logo"></a>
+                  <a href="#" class="search"></a>
+              </div>
+              <div class="right">
+                  <a href="#" class="open">打开豆瓣app</a>
+              </div>
+        </div>
+        <div class="content">
+              <ul class="options">
+                <li>aaa</li>
+                <li>aaa</li>
+                <li>aaa</li>
+                <li>aaa</li>
+              </ul>
+              <div class="pic-area">
+                <div class="main-pic"></div>
+                <div class="side-pic pic1">
+                </div>
+                <div class="side-pic pic2">
+                </div>
+              </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+```
+2. 同级目录下的style.css
+```
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background-color:#f6f6f6;
+}
+.container{
+  width:90vw;
+  margin:0 auto;
+  max-width: 650px;
+  background-color: white;
+}
+.container .header{
+  width:100%;
+  max-width: inherit;
+  height:3rem;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  box-shadow:0 1px 2px rgba(0,0,0,0.08);
+}
+.header .left{
+  float:left;
+}
+.header .right{
+  float:right;
+  padding:10px auto;
+}
+.header .left .logo{
+  display:inline-block;
+  width: 48px;
+  height:22px;
+  background-image: url(./douban.png);
+  background-repeat: no-repeat;;
+  background-size: 100% 100%;
+  margin-right:10px;
+}
+.header .left .search{
+  display: inline-block;
+  height:18.28571px;
+  width:24.57143px;
+  background-image: url(./search.png);
+  background-size: 100% 100%;
+}
+.header .right .open{
+  text-decoration: none;
+  font-size:13px;
+  display: inline-block;
+  width:75px;
+  height:13px;
+  padding:8px 13px;
+  float:right;
+  color:white;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 500;
+  background-color:#00b600;
+  border-radius: 6px;
+  line-height: 1;
+}
+.content .options{
+  width:90%;
+  height:100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color:inherit;
+  list-style: none;
+}
+.options li{
+  background-color: #f6f6f6;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 4px;
+  width: calc((100% / 2) - 30px);
+  height:20px;
+  margin:3px;
+  padding:12px;
+  float:left;
+}
+.pic-area{
+  width:calc(90% - 6px);
+  height:40vw;
+  max-height: 294px;
+  margin: 20px auto;
+}
+.main-pic{
+  width:70%;
+  height:inherit;
+  max-height: 294px;
+  background-color: #f8b;
+  background: url("https://img3.doubanio.com/view/note/l/public/p59792220.jpg") center center / cover no-repeat rgb(250, 250, 250);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+.side-pic{
+  width: calc(30% - 4px);
+  height:calc(20vw - 2px);
+  max-height: 147px;
+  display: inline-block;
+  background-color: #f0b;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  float: right;
+}
+.pic-area > .pic1{
+  background: url("https://img3.doubanio.com/view/note/l/public/p59945590.jpg") center center / cover no-repeat rgb(250, 250, 250);
+}
+.pic-area > .pic2{
+  margin-top:4px;
+  background: url("https://img3.doubanio.com/view/note/l/public/p59945605.jpg") center center / cover no-repeat rgb(250, 250, 250);
+}
+
+```
