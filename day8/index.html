@@ -17,6 +17,9 @@
   </head>
   <body>
       <div class="dengpao">开关</div>
+      <div class="choujiang dengpao">
+        点击我抽奖
+      </div>
       <script type="text/javascript">
          /*找到事件源*/
           document.querySelector(".dengpao").onclick=function(){
@@ -25,10 +28,18 @@
             this.style.backgroundColor="red";
           }
           var a = {
-            name:'兰昌俊',
-            gender:'男生'
+            name:'xxx',
+            gender:'xxx',
             work:'student'
           };
+          /*********************/
+
+          document.querySelectorAll(".choujiang")[0].onclick=function(){
+            this.style.backgroundColor="red";
+            this.style.fontStyle="20px";
+            this.style.color="white";
+            this.innerHTML="has changed";
+          }
       </script>
   </body>
 </html>

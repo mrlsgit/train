@@ -1,0 +1,29 @@
+.adv{
+  width:95vw;
+  height:10vw;
+  border:1px solid orange;
+  margin:0 auto;
+  position:relative;
+}
+.adv a{
+  display: block;
+  width:100%;
+  height:inherit;
+}
+.adv img{
+  height:inherit;
+  width:inherit;
+}
+.adv > .btn{
+  width:3vw;
+  height:3vw;
+  border:.2vw solid #b8b8b8;
+  color:#b8b8b8;
+  font-size:3vw;
+  text-align: center;
+  line-height: 3vw;
+  border-radius: 50%;
+  position:absolute;
+  top:calc(50% - 1.5vw);
+  left: 2vw;
+}

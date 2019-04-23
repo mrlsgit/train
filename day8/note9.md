@@ -1,4 +1,5 @@
 ## <center>第八天</center>
+#### <center>js基础</center>
 1. js ： 完成界面的交互动作，提升用户体验。有交互性。
 2. 建议放到`<\body>`元素的前面
 3. 规范：$ _ 英文 数字 
@@ -12,11 +13,25 @@
    2. 事件
    3. 事件处理函数
 5. 变量类型
-   1. `var test = {name:'your name',gender:'your gender'}` 键值对
-   1. 每个成员之间用逗号分割
-   2. 字符串用`'xxx'` 单引号或`"xxx"` 双引号包括
+   1. 字符串用`'xxx'` 单引号或`"xxx"` 双引号包括
    3. 数组`[1,2,3]`， 数组里的值可以是任意的数据类型：`[1,2,"aaa", obj,true,yourvar]`
    4. js中只有数字没有整型，浮点型之分
+   1. 类
+      1. `var test = {name:'your name',gender:'your gender'}` 键值对
+      1. 每个成员之间用逗号分割
+      2. 访问成员用`.`,eg:
+      ```
+      var test = {
+          name:"my name",
+          work:function(){
+              console.log("hello world");
+              return 100;
+          }
+      }
+      console.log(test.name);
+      test.work();
+      console.log(test.work());    
+      ```
 6. 函数：
    1. 声明：
    ```
@@ -26,3 +41,16 @@
    ```
    2. js函数，变量可以先调用后声明，调用和声明不分先后--变量提升，
       1. 只提升变量声明，不提升变量赋值$\rightarrow$使用前需要赋值
+      2. `null`值为空，`undefined`未声明
+   3. 函数也可以是变量：
+      ```
+      var var_function=function(){
+          console.log("hello world");
+      }
+      ```
+      1. 称函数赋值，也不能变量提升（使用前需要赋值）
+---
+#### <center>浏览器内置对象</center>
+1. `dom`对象 
+1. document.querySelector("");
+2. document.querySelectorAll("");
