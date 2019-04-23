@@ -2,9 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>事件三要素</title>
+    <style media="screen">
+      .dengpao{
+        width:100px;
+        height:60px;
+        background-color:#fb7;
+        text-align:center;
+        color:black;
+        line-height:60px;
+        border-radius:8px;
+      }
+    </style>
   </head>
   <body>
-
+      <div class="dengpao">开关</div>
+      <script type="text/javascript">
+         /*找到事件源*/
+          document.querySelector(".dengpao").onclick=function(){
+            //驼峰写法
+            console.log(this);
+            this.style.backgroundColor="red";
+          }
+          var a = {
+            name:'兰昌俊',
+            gender:'男生'
+            work:'student'
+          };
+      </script>
   </body>
 </html>
