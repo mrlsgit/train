@@ -16,7 +16,7 @@ function showTime(){
     time.innerHTML=tstring;
   },1000);
 }
-/**************************/
+/************导航栏特效**************/
 function navBarEffect(){
   var sectorsLi = document.querySelectorAll(".nav-bar li a");
   var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
@@ -30,23 +30,40 @@ function navBarEffect(){
     sectorsLi[i].onmouseout=function(){
       if(i != nav_index){
         sectorsSpan[i].style.animation = "none";
-        sectorsSpan[i].style.boxShadow="none";
+        sectorsSpan[i].style.boxShadow="0 0 0 1px white";
       }
     };
     sectorsLi[i].onclick=function(){
       nav_index = i;
       var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
-      for(var temp = 0; temp != i && temp < sectorsSpan.length; temp ++){
-        console.log('akjf;alj');
-        console.log(temp);
-        sectorsSpan[temp].style.boxShadow="none";
-        sectorsSpan[temp].setAttribute("box-shaow","0 0 0  white");
-        console.log(sectorsSpan[temp]);
+      for(var temp = 0;  temp < sectorsSpan.length; temp ++){
+        if(i != temp){
+          // console.log('akjf;alj');
+          // console.log(temp);
+          sectorsSpan[temp].style.boxShadow="0 0 0 10px white";
+          // sectorsSpan[temp].style.backgroundColor="red";
+          // console.log(sectorsSpan[temp]);
+        }
       }
-      sectorsSpan[i].backgroundColor="#ffd03f";
-      sectorsSpan[i].style.animation ="circle_active_ani  .2s";
-      sectorsSpan[i].style.animationFillMode="forwards";
-      window.location.reload();
+      if(i == nav_index){
+        sectorsSpan[i].style.backgroundColor="#ffd03f";
+        sectorsSpan[i].style.animation ="circle_active_ani  .2s";
+        sectorsSpan[i].style.animationFillMode="forwards";
+      }
+      
+      // window.location.reload();
     }
   }
+}
+/*******************光标闪动***************/
+function cursorbink(){
+  var cursor = document.querySelector(".main-string .cursor");
+  window.setInterval(function(){
+    // cursor.style.display="none";
+    cursor.style.backgroundColor="#4c5ea2";
+  }, 500);
+  window.setInterval(function(){
+    // cursor.style.display="inline-block";
+    cursor.style.backgroundColor="white";
+  },1000);
 }
