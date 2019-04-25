@@ -128,10 +128,115 @@ body{
   position:relative;
   bottom: -5px;
 }
+.content .side-bar{
+  height:70vh;
+  width:64px;
+  position:absolute;
+  right:0px;
+  top:5vh;
+}
+.side-bar ul{
+  list-style: none;
+  text-align: center;
+}
+.side-bar ul a{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.side-bar .logo{
+  background-size: 100% 100%;
+  display: block;
+  height:64px;
+  width:64px;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/*************side-bar 动作***************/
+.side-bar .logo:hover{
+  animation: logoAni 0.4s ease-in-out ;
+}
+@keyframes logoAni {
+    25%{
+      transform: translateY(3px);
+    }
+    50%{
+      transform: translateY(-3px);
+    }
+    75%{
+      transform: translateY(3px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+}
+
+.side-bar ul li span:hover{
+  animation: spanAni .2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes spanAni {
+  100%{
+    text-shadow: 0 4px 5px black;
+  }
+}
+/*******************************/
+.side-bar .logopath1{
+  background-image: url(https://www.vanoc.top/static/media/sup.3c007529.png);
+}
+
+.side-bar .logopath2{
+  background-image: url(https://www.vanoc.top/static/media/readme.8d22c89a.png);
+}
+
+.side-bar .logopath3{
+  background-image: url(https://www.vanoc.top/static/media/msg.f08a151b.png);
+}
+
+.side-bar .logopath4{
+  background-image: url(https://www.vanoc.top/static/media/setting.a6823a97.png);
+}
+/********底部**************/
 .content .bottom-bar{
   height:10vh;
   width: 100%;
-  background-color: red;
   position:absolute;
   bottom: 0px;
+}
+.bottom-bar ul{
+  list-style: none;
+  width:100%;
+  height:inherit;
+}
+.bottom-bar ul li{
+  display: inline-block;
+  float:left;
+  width: calc( 100% / 5 - 1px);
+  height: 10vh;
+  text-align: center;
+  font-size:1rem;
+  line-height: 10vh;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.bottom-bar .start{
+  border-left: none;
+}
+.bottom-bar .end{
+  border-right: none;
+}
+.bottom-bar li b{
+  font-weight: bold;
+  color:#ffd03f
+}
+.bottom-bar li a{
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  color:white;
+}
+.bottom-bar li a:hover{
+  text-decoration: underline;
 }
