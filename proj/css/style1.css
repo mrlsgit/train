@@ -9,7 +9,7 @@
 body{
   background-color: #4c5ea2;
 }
-/***********头部********************/
+/***********header********************/
 .header{
   height:36px;
   width:100%;
@@ -56,8 +56,9 @@ body{
   height:26px;
   z-index: -1;
   position:absolute;
-  top:-4px;
+  top:-7px;
   left:12px;
+  /* border:3px solid #ffd03f; */
   border-radius: 50%;
 }
 .time-bar{
@@ -80,42 +81,34 @@ body{
   margin-left: 10px;
   font-weight: bolder;
 }
-/******************************/
-.content{
-  height:calc(99vh - 36px);
-  width:90vw;
-  border:1px solid #fb8;
-  margin:0 auto;
-}
-.content .main-string{
-
-}
-/*************??******************/
-.test{
-  display:inline-block;
-  /* width:50px; */
-  /* height:50px; */
-  border-radius: 50%;
-  /* border:1px solid #fb8; */
-  animation:test .3s;
-  animation-fill-mode: forwards;
-}
+/****header effect******************/
 @keyframes test{
   from{
     width:1px;
     height:1px;
-    border:10px solid #fb8;
+    border:10px solid #ffd03f;
   }
   60%,80%,to{
     width:26px;
     height:26px;
-    border:3px solid #fb8;
+    border:3px solid #ffd03f;
     animation-timing-function:
       cubic-bezier(.16,1.08,.03,1.57);
   }
   70%{
     width:26px;
     height:26px;
-    border:2px solid #fb8;
+    border:2px solid #ffd03f;
   }
 }
+/******************************/
+.content{
+  height:calc(99vh - 36px);
+  width:90vw;
+  border:1px solid #ffd03f;
+  margin:0 auto;
+}
+.content .main-string{
+
+}
+/*************??******************/

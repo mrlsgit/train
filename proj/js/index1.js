@@ -15,12 +15,21 @@ function showTime(){
 }
 /**************************/
 function navBarEffect(){
-  var sectorsLi = document.querySelectorAll(".nav-bar li");
-  var sectorsSpan = document.querySelectorAll(".nav-bar li span");
-  for(var i = 0; i < sectorsLi.length; i ++){
-    sectorsLi[i].click=function(){
-      sectorsSpan[i].style.animation="test .3s";
+  var sectorsLi = document.querySelectorAll(".nav-bar li a");
+  var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
+  for(let i = 0; i < sectorsLi.length; i ++){
+    sectorsLi[i].onmouseover=function(){
+      sectorsSpan[i].style.animation ="test .3s";
       sectorsSpan[i].style.animationFillMode="forwards";
+    };
+    sectorsLi[i].onmouseout=function(){
+      sectorsSpan[i].style.animation = "none";
+      sectorsSpan[i].style.border="none";
+    };
+    sectorsLi[i].onclick=function(){
+      sectorsSpan[i].style.backgroundColor="#ffd03f";
+      sectorsSpan[i].style.border="3px solid #ffd03f";
+      
     }
   }
 }
