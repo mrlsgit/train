@@ -82,7 +82,7 @@ body{
   font-weight: bolder;
 }
 /****header effect******************/
-@keyframes test{
+@keyframes circle_ani{
   from{
     width:1px;
     height:1px;
@@ -111,4 +111,44 @@ body{
 .content .main-string{
 
 }
-/*************??******************/
+/*************test******************/
+.test{
+  display:inline-block;
+  width:26px;
+  height:26px;
+  /* border:3px solid #ffd03f; */
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #ffd03f inset;
+  animation: test .2s infinite;
+}
+@keyframes test{
+  from{
+    /* width:1px; */
+    /* height:1px; */
+    /* border:10px solid #ffd03f; */
+    /* box-shadow: 0 0 0 0 #ffd03f; */
+    width:24px;
+    height:24px;
+    box-shadow: 0 0 0 15px #ffd03f inset;
+  }
+  60%,80%,to{
+    /* width:26px; */
+    /* height:26px; */
+    /* border:3px solid #ffd03f; */
+    width:26px;
+    height:26px;
+    box-shadow: 0 0 0 2px #ffd03f inset;
+    /* box-shadow: 0 0 0 1px #ffd03f; */
+    animation-timing-function:
+      cubic-bezier(.16,1.08,.03,1.57);
+  }
+  70%{
+    width:30px;
+    height:30px;
+    /* width:26px; */
+    /* height:26px; */
+    /* border:2px solid #ffd03f; */
+    /* box-shadow: 0 0 0 2px #ffd03f; */
+    box-shadow: 0 0 0 1px #ffd03f inset;
+  }
+}
