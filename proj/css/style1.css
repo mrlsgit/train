@@ -9,6 +9,7 @@
 body{
   background-color: #4c5ea2;
 }
+/***********头部********************/
 .header{
   height:36px;
   width:100%;
@@ -67,10 +68,18 @@ body{
   margin-left: 10px;
   font-weight: bolder;
 }
-
+/***********头部特效**************/
+.nav-bar li:hover{
+  background-color: red;
+}
+/*******************************/
+/******************************/
 .content{
   height:calc(99vh - 36px);
   width:90vw;
   border:1px solid #fb8;
   margin:0 auto;
+}
+.content .main-string{
+
 }
