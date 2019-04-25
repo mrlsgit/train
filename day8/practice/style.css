@@ -1,0 +1,16 @@
+.btn{
+    width:10vw;
+    height:6.18vw;
+    font-size:3vw;
+    background-color: aqua;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 6.18vw;
+    box-shadow: 0 0 1vw 1vw #fba,
+                0 0 1vw 1vw #78a inset;
+    position:absolute;
+    top:calc(50% - 5vw);
+    left:calc(50% - 3.09vw);
+    color:#fba;
+    text-shadow: 0 0 1vw white;
+}

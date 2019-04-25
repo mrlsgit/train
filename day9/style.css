@@ -1,0 +1,30 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.container{
+  width:70vw;
+  height:100vh;
+  margin:0px auto;
+  position:relative;
+}
+.container .line{
+  width:3vw;
+  margin:0 auto;
+  padding:0px;
+  list-style: none;
+  position:absolute;
+  top:calc(50% - 3vw);
+  left:calc(50% - 3vw);
+}
+.container .line li{
+  width:inherit;
+  height:3vw;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 2.5vw;
+  border:1px solid red;
+  border-bottom: none;
+  display: inline-block;
+  background-color: #fb8;
+}

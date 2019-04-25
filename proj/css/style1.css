@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: #4c5ea2;
+}
+.header{
+  height:36px;
+  width:100%;
+  background-color: white;
+  font-family: erikos,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragin;
+  color:black;
+}
+.header .nav-bar{
+  height:inherit;;
+  width:
+}
+.nav-bar .logo{
+  height:20px;
+  width:23px;
+  background-image: url(https://www.vanoc.top/static/media/logo.fc6bc3c1.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>practice</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="btn">
+            btn
+        </div>
+        <script>
+            // function Start(){
+            //     var len = 10;
+            //     for(i = 0; i < len; i ++){
+            //         setTimeout(function(){
+            //             console.log(i);
+            //         }, 1000);
+            //     }
+            // }
+            // function Start(){
+            //     var len = 10;
+            //     for(i = 0; i < len; i ++){
+            //         (function(a){
+            //             setTimeout(function(){
+            //                 console.log(a);
+            //             },2000);
+            //         })(i);
+            //     }
+            // }
+            window.setInterval(Start(),1000);
+            function Start(){
+                var len = 10;
+                for( i = 0; i < len; i++){
+                    setTimeout(fn(i),1000*i);
+                }
+                function fn(a){
+                    return function(){
+                        console.log(a);
+                    }
+                }
+            }
+            var obj = document.querySelector(".btn");
+            window.setInterval(function(){
+                obj.style.boxShadow="none";
+                obj.style.color="black";
+                obj.style.textShadow="none";
+            },1000);
+            window.setInterval(function(){
+                obj.style.boxShadow="0 0 1vw 1vw #fba,0 0 1vw 1vw #78a inset";
+                obj.style.color="#fba";
+                obj.style.textShadow="text-shadow: 0 0 5vw  white";
+            },2000);
+        </script>
+    </body>
+</html>
