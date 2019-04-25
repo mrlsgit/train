@@ -47,6 +47,18 @@ body{
   color:black;
   font-size: 16px;
   font-weight: bolder;
+  position:relative;
+  z-index: 1;
+}
+.nav-bar a span{
+  display:inline-block;
+  width:26px;
+  height:26px;
+  z-index: -1;
+  position:absolute;
+  top:-4px;
+  left:12px;
+  border-radius: 50%;
 }
 .time-bar{
   width:99px;
@@ -68,11 +80,6 @@ body{
   margin-left: 10px;
   font-weight: bolder;
 }
-/***********头部特效**************/
-.nav-bar li:hover{
-  background-color: red;
-}
-/*******************************/
 /******************************/
 .content{
   height:calc(99vh - 36px);
