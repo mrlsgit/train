@@ -1,3 +1,6 @@
+/*******全局变量***********/
+var nav_index = 0; //导航栏上哪个被激活
+
 /********** 显示时间 *******/
 function showTime(){
   var time = document.querySelector(".time");
@@ -19,23 +22,31 @@ function navBarEffect(){
   var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
   for(let i = 0; i < sectorsLi.length; i ++){
     sectorsLi[i].onmouseover=function(){
-      sectorsSpan[i].style.animation ="test .3s";
-      sectorsSpan[i].style.animationFillMode="forwards";
+      if( i != nav_index){
+        sectorsSpan[i].style.animation ="circle_ani  .2s";
+        sectorsSpan[i].style.animationFillMode="forwards";
+      }
     };
     sectorsLi[i].onmouseout=function(){
-      sectorsSpan[i].style.animation = "none";
-      sectorsSpan[i].style.border="none";
+      if(i != nav_index){
+        sectorsSpan[i].style.animation = "none";
+        sectorsSpan[i].style.boxShadow="none";
+      }
     };
     sectorsLi[i].onclick=function(){
-      sectorsSpan[i].style.backgroundColor="#ffd03f";
-      sectorsSpan[i].style.border="3px solid #ffd03f";
-      
+      nav_index = i;
+      var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
+      for(var temp = 0; temp != i && temp < sectorsSpan.length; temp ++){
+        console.log('akjf;alj');
+        console.log(temp);
+        sectorsSpan[temp].style.boxShadow="none";
+        sectorsSpan[temp].setAttribute("box-shaow","0 0 0  white");
+        console.log(sectorsSpan[temp]);
+      }
+      sectorsSpan[i].backgroundColor="#ffd03f";
+      sectorsSpan[i].style.animation ="circle_active_ani  .2s";
+      sectorsSpan[i].style.animationFillMode="forwards";
+      window.location.reload();
     }
   }
-}
-function circle(){
-  var cc = document.querySelector(".test");
-  window.setInterval(function(){
-
-  },100);
 }

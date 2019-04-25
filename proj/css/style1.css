@@ -52,13 +52,13 @@ body{
 }
 .nav-bar a span{
   display:inline-block;
-  width:26px;
-  height:26px;
+  width:8px;
+  height:8px;
+  background-color: white;
   z-index: -1;
   position:absolute;
-  top:-7px;
-  left:12px;
-  /* border:3px solid #ffd03f; */
+  top:5px;
+  left:23px;
   border-radius: 50%;
 }
 .time-bar{
@@ -84,13 +84,24 @@ body{
 /****header effect******************/
 @keyframes circle_ani{
   form{
-    box-shadow: 0 0 0 20px white, 0 0 0 4px #ffd03f;
+    box-shadow: 0 0 0 8px white, 0 0 0 4px #ffd03f;
   }
   60%,80%,to{
-    box-shadow: 0 0 0 20px white, 0 0 0 24px #ffd03f;
+    box-shadow: 0 0 0 9px white, 0 0 0 12px #ffd03f;
   }
   70%{
-    box-shadow: 0 0 0 20px white, 0 0 0 26px #ffd03f;
+    box-shadow: 0 0 0 10px white, 0 0 0 14px #ffd03f;
+  }
+}
+@keyframes circle_active_ani{
+  form{
+    box-shadow:0 0 0 4px #ffd03f;
+  }
+  60%,80%,to{
+    box-shadow:0 0 0 12px #ffd03f;
+  }
+  70%{
+    box-shadow: 0 0 0 14px #ffd03f;
   }
 }
 /******************************/
@@ -102,24 +113,4 @@ body{
 }
 .content .main-string{
 
-}
-/*************test******************/
-.test{
-  width:8px;
-  height:8px;
-  border-radius: 50%;
-  background-color: white;
-  animation: testa .3s forwards;
-}
-
-@keyframes testa{
-  form{
-    box-shadow: 0 0 0 20px white, 0 0 0 4px #ffd03f;
-  }
-  60%,80%,to{
-    box-shadow: 0 0 0 20px white, 0 0 0 24px #ffd03f;
-  }
-  70%{
-    box-shadow: 0 0 0 20px white, 0 0 0 26px #ffd03f;
-  }
 }
