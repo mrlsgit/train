@@ -2,6 +2,10 @@
   margin:0;
   padding:0;
 }
+.img-base{
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
 body{
   background-color: #4c5ea2;
 }
@@ -13,13 +17,60 @@ body{
   color:black;
 }
 .header .nav-bar{
-  height:inherit;;
-  width:
+  height:inherit;
+  width:348px;
+  float:left;
+  padding-top:9px;
+  padding-left: 5vw;
 }
 .nav-bar .logo{
+  display: inline-block;
   height:20px;
   width:23px;
   background-image: url(https://www.vanoc.top/static/media/logo.fc6bc3c1.png);
-  background-repeat: no-repeat;
-  background-size:100% 100%;
+}
+.nav-bar>ul{
+  display: inline-block;
+  width:320px;
+  list-style: none;
+}
+.nav-bar li{
+  float:left;
+  width:60px;
+  height:20px;
+  padding:0 10px;
+  text-align: center;
+}
+.nav-bar a{
+  text-decoration: none;
+  color:black;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.time-bar{
+  width:99px;
+  height:inherit;
+  float:right;
+  padding: 0 5vw;
+}
+.time-bar .logo{
+  height:24px;
+  width:24px;
+  margin-top:6px;
+  background-image: url(https://www.vanoc.top/static/media/github.4a160e3c.png);
+  float:left;
+}
+.time-bar .time{
+  width:65px;
+  float:right;
+  line-height: 36px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.content{
+  height:calc(99vh - 36px);
+  width:90vw;
+  border:1px solid #fb8;
+  margin:0 auto;
 }
