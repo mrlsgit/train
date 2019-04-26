@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>模仿网站</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/work.css">
+    <script src="./js/index1.js"></script>
+  </head>
+  <body onload="showTime()">
+      <div class="header">
+          <div class="nav-bar">
+              <div class="logo img-base"></div>
+              <ul>
+                <li><a href="#"><span></span>HOME</a></li>
+                <li><a href="#"><span></span>WORK</a></li>
+                <li><a href="#"><span></span>ABOUT</a></li>
+                <li><a href="#"><span></span>BLOG</a></li>
+              </ul>
+          </div>
+          <div class="time-bar">
+            <div class="logo img-base">
+            </div>
+            <div class="time">
+            </div>
+          </div>
+      </div>
+      <!-- 这个页面应该是 原页面的逻辑bug，
+       下面有了 view more
+       就没必要加上滚动条
+     -->
+      <div class="content">
+          <div class="show-mode">
+              <p>Design</p>
+              <div class="side-bar show-bar">
+                <ul>
+                  <li><a href="#" target="_blank"><div class="logo logopath1"></div><span>点赞</span></a></li>
+                  <li><a href="#" target="_blank"><div class="logo logopath2"></div><span>说明</span></a></li>
+                  <li><a href="#" target="_blank"><div class="logo logopath3"></div><span>留言</span></a></li>
+                  <li><a href="#" target="_blank"><div class="logo logopath4"></div><span>设置</span></a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <script>
+        navBarEffect(1);
+      </script>
+  </body>
+</html>

@@ -10,7 +10,7 @@ function showTime(){
     var muintes = currentDate.getMinutes();
     var seconds = currentDate.getSeconds();
     var tstring;
-    tstring =Math.floor( hours/10)+'' + hours%10 + ':' 
+    tstring =Math.floor( hours/10)+'' + hours%10 + ':'
     +Math.floor( muintes/10) + '' + muintes%10 + ':'
     +Math.floor( seconds/10) + '' + seconds%10;
     time.innerHTML=tstring;
@@ -20,7 +20,8 @@ function showTime(){
 /*
   版本0.3
 */
-function navBarEffect(){
+function navBarEffect(index){
+  nav_index = index;
 	var sectorsLi = document.querySelectorAll(".nav-bar li a");
     var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
     /******进入页面时圆圈需要有个特效*******/
@@ -60,7 +61,7 @@ function navBarEffect(){
             sectorsSpan[i].style.animation= "circle_active_ani .2s";
             sectorsSpan[i].style.animationFillMode="forwards";
             sectorsSpan[i].style.backgroundColor="#ffd03f";
-            nav_index = i; 
+            nav_index = i;
         }
     }
 }
@@ -89,7 +90,7 @@ function mainStringLoadEffect(){
   for(let i = 0; i < masks.length; i ++){
     mainString[i].style.color="#4c5ea2";
     masks[i].style.animation="loadAniLeft .5s linear";
-    masks[i].style.left="0";  
+    masks[i].style.left="0";
   }
   window.setTimeout(function(){
     for(let i = 0; i < masks.length; i ++){
