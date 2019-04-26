@@ -5,8 +5,8 @@
 }
 /******卡片模型************/
 .card{
-  width:inherit;
-  height:inherit;
+  width:100%;
+  height:100%;
   border:1px solid black;
   background-color: #fb8;
   border-radius: 15px;
