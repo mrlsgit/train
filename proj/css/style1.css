@@ -124,7 +124,8 @@ body{
   width:.5vh;
   height:15vh;
   background-color: white;
-  display: inline-block;
+  /* display: inline-block; */
+  display:none;
   margin-left: 1vh;
   position:relative;
   bottom: -5px;
