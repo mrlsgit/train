@@ -76,3 +76,20 @@ function cursorbink(){
     cursor.style.backgroundColor="white";
   },1000);
 }
+/*************加载特效***************/
+function mainStringLoadEffect(){
+  var masks = document.querySelectorAll(".main-string .mask");
+  console.log("alkjgg");
+  console.log(masks);
+  for(let i = 0; i < masks.length; i ++){
+    masks[i].style.animation="loadAniLeft .5s linear";
+    masks[i].style.left="0";
+  }
+  window.setTimeout(function(){
+    for(let i = 0; i < masks.length; i ++){
+      masks[i].removeAttribute("style","left");
+      masks[i].style.right="0";
+      masks[i].style.animation="loadAniRight .5s linear";
+    }
+  },510);
+}

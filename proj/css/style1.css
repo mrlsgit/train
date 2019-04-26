@@ -84,7 +84,7 @@ body{
 /****header effect******************/
 @keyframes circle_ani{
   form{
-    
+
     box-shadow: 0 0 0 8px white, 0 0 0 4px #ffd03f;
   }
   60%,80%,to{
@@ -129,6 +129,45 @@ body{
   position:relative;
   bottom: -5px;
 }
+/*
+* 页面加载特效
+* 用class = "mask"
+*/
+.main-string p{
+  position:relative;
+  display: inline-block;
+  /* overflow: hidden; */
+}
+.main-string .mask{
+  /* width:10%; */
+  height:16vh; /*和cursor一样*/
+  background-color: #ffd03f;
+  z-index: 0;
+  position:absolute;
+  top:3.5vh;
+  /* left:0; */
+  /* animation: loadAniLeft .5s linear; */
+  /* right:0; */
+  /* animation:loadAniRight .5s linear; */
+  animation-fill-mode: forwards;
+}
+@keyframes loadAniLeft {
+    0%{
+        width:0%;
+    }
+    100%{
+      width:100%;
+    }
+}
+@keyframes loadAniRight {
+  0%{
+    width:100%;
+  }
+  100%{
+    width:0%;
+  }
+}
+/**************/
 .content .side-bar{
   height:70vh;
   width:64px;
@@ -241,3 +280,4 @@ body{
 .bottom-bar li a:hover{
   text-decoration: underline;
 }
+/************************/
