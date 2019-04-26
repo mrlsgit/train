@@ -43,6 +43,7 @@ function navBarEffect(index){
     	}
     }
     for(let i = 0; i < sectorsLi.length; i ++){
+      
     	sectorsLi[i].onmouseout=function(){
             if(i != nav_index){
                 //消除特效 或直接display : none

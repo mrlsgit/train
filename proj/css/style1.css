@@ -16,6 +16,8 @@ body{
   background-color: white;
   font-family: erikos,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragin;
   color:black;
+  z-index: 0;
+  position:fixed;
 }
 .header .nav-bar{
   height:inherit;
@@ -111,6 +113,7 @@ body{
   width:90vw;
   margin:0 auto;
   position:relative;
+  z-index: -1;
 }
 .content .main-string{
     color:white;
@@ -224,19 +227,19 @@ body{
   }
 }
 /*******************************/
-.side-bar .logopath1{
+.side-bar-style .logopath1{
   background-image: url(https://www.vanoc.top/static/media/sup.3c007529.png);
 }
 
-.side-bar .logopath2{
+.side-bar-style .logopath2{
   background-image: url(https://www.vanoc.top/static/media/readme.8d22c89a.png);
 }
 
-.side-bar .logopath3{
+.side-bar-style .logopath3{
   background-image: url(https://www.vanoc.top/static/media/msg.f08a151b.png);
 }
 
-.side-bar .logopath4{
+.side-bar-style .logopath4{
   background-image: url(https://www.vanoc.top/static/media/setting.a6823a97.png);
 }
 /********底部**************/
@@ -244,7 +247,7 @@ body{
   height:10vh;
   width: 100%;
   position:absolute;
-  bottom: 0px;
+  bottom: -36px;
 }
 .bottom-bar ul{
   list-style: none;
@@ -271,6 +274,10 @@ body{
 .bottom-bar li b{
   font-weight: bold;
   color:#ffd03f
+}
+
+.bottom-bar li strong{
+ font-weight: 900; 
 }
 .bottom-bar li a{
   font-weight: bold;

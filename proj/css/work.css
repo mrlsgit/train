@@ -1,9 +1,19 @@
-.show-mode{
+.content{
+  padding-top:5%;
   width:100%;
-  height:38%;
-  margin-top:2%;
+  height:80vh;
 }
-.show-mode > p{
+.content hr{
+  margin-bottom: 30px;
+  border:.5px solid black;
+}
+.show-mode{
+  width:70%;
+  height:38%;
+  display:block;
+  margin: 0 5vw;
+}
+.show-mode > span{
   color:white;
   width:160px;
   height: 40px;
@@ -13,7 +23,8 @@
   text-align: center;
   letter-spacing: 5px;
   line-height: 40px;
-
+  margin-bottom: 20px;
+  padding:3px 5px;
 }
 .side-bar .show-bar{
   height: 64px;
@@ -23,4 +34,46 @@
 .show-bar ul li{
   float : left;
   margin-right:5vw;
+}
+.bar1 .logopath1{
+  background-image: url(https://www.vanoc.top/static/media/sup.3c007529.png);
+}
+
+.bar1 .logopath2{
+  background-image: url(https://www.vanoc.top/static/media/logo1.76597760.png);
+}
+
+.bar1 .logopath3{
+  background-image: url(https://www.vanoc.top/static/media/logo2.df0edeb2.png);
+}
+
+.bar1 .logopath4{
+  background-image: url(https://www.vanoc.top/static/media/chicken.6ad6248d.png);
+}
+.bar1 .logopath5{
+  background-image: url(https://www.vanoc.top/static/media/moneky.1f9e8e88.png);
+}
+.bottom-nav{
+  margin-left: 5vw;
+}
+.bottom-nav a{
+  text-decoration: none;
+}
+.bottom-nav .logo{
+  display: inline-block;
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #b8b8b8;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  color:#FFD03F;
+}
+.bottom-nav span:not(.logo) {
+  margin-left: 10px;
+  color:#b8b8b8;
+  font-size:1rem;
+  font-weight: bold;
 }
