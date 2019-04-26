@@ -17,60 +17,9 @@ function showTime(){
   },1000);
 }
 /************导航栏特效**************/
-// function navBarEffect(){
-//   var sectorsLi = document.querySelectorAll(".nav-bar li a");
-//   var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
-//   sectorsSpan[nav_index].style.animation ="circle_active_ani  .2s";
-//   sectorsSpan[nav_index].style.animationFillMode="forwards";
-//   sectorsSpan[nav_index].style.backgroundColor="#ffd03f";
-
-//   for(let i = 0; i < sectorsLi.length; i ++){
-//     sectorsLi[i].onmouseover=function(){
-//       if( i != nav_index){
-//         sectorsSpan[i].style.display="inline-block";
-//         sectorsSpan[i].style.animation ="circle_ani  .2s";
-//         sectorsSpan[i].style.animationFillMode="forwards";
-//         sectorsSpan[i].style.display="none";
-//       }
-//       // else{
-//       //   sectorsSpan[i].style.animation = "none";
-//       //   sectorsSpan[i].style.backgroundColor="white";
-//       //   sectorsSpan[i].style.boxShadow="0 0 0 20px white";
-//       //   sectorsSpan[i].style.animation ="circle_active_ani  .2s";
-//       //   sectorsSpan[i].style.animationFillMode="forwards";
-//       // }
-//     };
-//     sectorsLi[i].onmouseout=function(){
-//       if(i != nav_index){
-//         sectorsSpan[i].style.display="inline-block";
-//         sectorsSpan[i].style.animation = "none";
-//         sectorsSpan[i].style.backgroundColor="white";
-//         sectorsSpan[i].style.boxShadow="0 0 0 1px white";
-//         sectorsSpan[i].style.display="none";
-//       }
-//     };
-//     sectorsLi[i].onclick=function(){
-//       nav_index = i;
-//       var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
-//       for(var temp = 0;  temp < sectorsSpan.length; temp ++){
-//           // console.log('akjf;alj');
-//           // console.log(temp);
-//           // sectorsSpan[temp].style.boxShadow="0 0 0 10px white";
-//           // sectorsSpan[temp].style.backgroundColor="white";
-//           sectorsSpan[temp].style.display="none";
-//           sectorsSpan[temp].style.boxShadow="0 0 0 1px white";
-//           // sectorsSpan[temp].style.backgroundColor="red";
-//           // console.log(sectorsSpan[temp]);
-//       }
-//         sectorsSpan[i].style.display="inline-block";
-//         sectorsSpan[i].style.backgroundColor="#ffd03f";
-//         sectorsSpan[i].style.animation ="circle_active_ani  .2s";
-//         sectorsSpan[i].style.animationFillMode="forwards";
-      
-//       // window.location.reload();
-//     }
-//   }
-// }
+/*
+  版本0.3
+*/
 function navBarEffect(){
 	var sectorsLi = document.querySelectorAll(".nav-bar li a");
     var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
