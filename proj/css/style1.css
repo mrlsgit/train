@@ -84,6 +84,7 @@ body{
 /****header effect******************/
 @keyframes circle_ani{
   form{
+    
     box-shadow: 0 0 0 8px white, 0 0 0 4px #ffd03f;
   }
   60%,80%,to{

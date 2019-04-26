@@ -17,43 +17,103 @@ function showTime(){
   },1000);
 }
 /************导航栏特效**************/
-function navBarEffect(){
-  var sectorsLi = document.querySelectorAll(".nav-bar li a");
-  var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
-  for(let i = 0; i < sectorsLi.length; i ++){
-    sectorsLi[i].onmouseover=function(){
-      if( i != nav_index){
-        sectorsSpan[i].style.animation ="circle_ani  .2s";
-        sectorsSpan[i].style.animationFillMode="forwards";
-      }
-    };
-    sectorsLi[i].onmouseout=function(){
-      if(i != nav_index){
-        sectorsSpan[i].style.animation = "none";
-        sectorsSpan[i].style.boxShadow="0 0 0 1px white";
-      }
-    };
-    sectorsLi[i].onclick=function(){
-      nav_index = i;
-      var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
-      for(var temp = 0;  temp < sectorsSpan.length; temp ++){
-        if(i != temp){
-          // console.log('akjf;alj');
-          // console.log(temp);
-          sectorsSpan[temp].style.boxShadow="0 0 0 10px white";
-          // sectorsSpan[temp].style.backgroundColor="red";
-          // console.log(sectorsSpan[temp]);
-        }
-      }
-      if(i == nav_index){
-        sectorsSpan[i].style.backgroundColor="#ffd03f";
-        sectorsSpan[i].style.animation ="circle_active_ani  .2s";
-        sectorsSpan[i].style.animationFillMode="forwards";
-      }
+// function navBarEffect(){
+//   var sectorsLi = document.querySelectorAll(".nav-bar li a");
+//   var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
+//   sectorsSpan[nav_index].style.animation ="circle_active_ani  .2s";
+//   sectorsSpan[nav_index].style.animationFillMode="forwards";
+//   sectorsSpan[nav_index].style.backgroundColor="#ffd03f";
+
+//   for(let i = 0; i < sectorsLi.length; i ++){
+//     sectorsLi[i].onmouseover=function(){
+//       if( i != nav_index){
+//         sectorsSpan[i].style.display="inline-block";
+//         sectorsSpan[i].style.animation ="circle_ani  .2s";
+//         sectorsSpan[i].style.animationFillMode="forwards";
+//         sectorsSpan[i].style.display="none";
+//       }
+//       // else{
+//       //   sectorsSpan[i].style.animation = "none";
+//       //   sectorsSpan[i].style.backgroundColor="white";
+//       //   sectorsSpan[i].style.boxShadow="0 0 0 20px white";
+//       //   sectorsSpan[i].style.animation ="circle_active_ani  .2s";
+//       //   sectorsSpan[i].style.animationFillMode="forwards";
+//       // }
+//     };
+//     sectorsLi[i].onmouseout=function(){
+//       if(i != nav_index){
+//         sectorsSpan[i].style.display="inline-block";
+//         sectorsSpan[i].style.animation = "none";
+//         sectorsSpan[i].style.backgroundColor="white";
+//         sectorsSpan[i].style.boxShadow="0 0 0 1px white";
+//         sectorsSpan[i].style.display="none";
+//       }
+//     };
+//     sectorsLi[i].onclick=function(){
+//       nav_index = i;
+//       var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
+//       for(var temp = 0;  temp < sectorsSpan.length; temp ++){
+//           // console.log('akjf;alj');
+//           // console.log(temp);
+//           // sectorsSpan[temp].style.boxShadow="0 0 0 10px white";
+//           // sectorsSpan[temp].style.backgroundColor="white";
+//           sectorsSpan[temp].style.display="none";
+//           sectorsSpan[temp].style.boxShadow="0 0 0 1px white";
+//           // sectorsSpan[temp].style.backgroundColor="red";
+//           // console.log(sectorsSpan[temp]);
+//       }
+//         sectorsSpan[i].style.display="inline-block";
+//         sectorsSpan[i].style.backgroundColor="#ffd03f";
+//         sectorsSpan[i].style.animation ="circle_active_ani  .2s";
+//         sectorsSpan[i].style.animationFillMode="forwards";
       
-      // window.location.reload();
+//       // window.location.reload();
+//     }
+//   }
+// }
+function navBarEffect(){
+	var sectorsLi = document.querySelectorAll(".nav-bar li a");
+    var sectorsSpan = document.querySelectorAll(".nav-bar ul li a span");
+    /******进入页面时圆圈需要有个特效*******/
+    sectorsSpan[nav_index].style.animation ="circle_active_ani  .2s";
+	sectorsSpan[nav_index].style.animationFillMode="forwards";
+    sectorsSpan[nav_index].style.backgroundColor="#ffd03f";
+    /********添加逻辑：*******/
+    /*
+    * 当鼠标点击了导航栏时，所点的导航栏应该有实心动画，并且没有其他效果
+    *
+    */
+    for(let i = 0; i < sectorsLi.length; i ++){
+    	sectorsLi[i].onmouseover=function(){
+    		if( i  != nav_index){
+               // 执行特效
+               sectorsSpan[i].style.animation ="circle_ani  .2s";
+               sectorsSpan[i].style.animationFillMode="forwards";
+    		}
+    	}
     }
-  }
+    for(let i = 0; i < sectorsLi.length; i ++){
+    	sectorsLi[i].onmouseout=function(){
+            if(i != nav_index){
+                //消除特效 或直接display : none
+                //清除特效应该用removeAtrribute("style","box-shadow");
+                sectorsSpan[i].removeAttribute("style", "box-shadow");
+            }
+        }
+    }
+    for(let i = 0; i < sectorsLi.length; i ++){
+        sectorsLi[i].onclick=function(){
+            //清除其他所有的特效，并执行当前特效
+            for(var j = 0; j < sectorsSpan.length; j ++){
+                sectorsSpan[j].removeAttribute("style", "box-shadow");
+                sectorsSpan[j].style.backgroundColor="white";
+            }
+            sectorsSpan[i].style.animation= "circle_active_ani .2s";
+            sectorsSpan[i].style.animationFillMode="forwards";
+            sectorsSpan[i].style.backgroundColor="#ffd03f";
+            nav_index = i; 
+        }
+    }
 }
 /*******************光标闪动***************/
 function cursorbink(){
