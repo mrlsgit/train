@@ -79,7 +79,7 @@ function cursorbink(){
 }
 /*************加载特效***************/
 /*
-  主字体加载特效
+  主字体加载
 */
 function mainStringLoadEffect(){
   var masks = document.querySelectorAll(".main-string .mask");
@@ -89,23 +89,16 @@ function mainStringLoadEffect(){
   for(let i = 0; i < masks.length; i ++){
     mainString[i].style.color="#4c5ea2";
     masks[i].style.animation="loadAniLeft .5s linear";
-    masks[i].style.animationFillMode="forwards";
     masks[i].style.left="0";  
-    mainString[i].style.color="#4c5ea2";
   }
   window.setTimeout(function(){
     for(let i = 0; i < masks.length; i ++){
       mainString[i].style.color="white";
       masks[i].removeAttribute("style","left");
+      masks[i].style.right="0";
+      masks[i].style.animation="loadAniRight .5s linear";
+      cursorbink();
     }
-    window.setTimeout(function(){
-      for(let i = 0; i < masks.length; i ++){
-        masks[i].style.right="0";
-        masks[i].style.animation="loadAniRight .5s linear";
-      }
-    },500);
   },500);
-  cursorbink();
-  
 
 }
