@@ -154,3 +154,62 @@
   top:20px;
   left:180px;
 }
+.show-right .where div{
+  position: relative;
+  background-color : rgb(61, 179, 209);
+  color:rgb(61, 179, 209);
+}
+.show-right .where div p{
+  width:10rem;
+  height:2rem;
+  font-size:1.5rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 2rem;
+  background-color: white;
+  color:inherit;
+  text-shadow:0 0 2px black;
+  position:absolute;
+  top:calc(20%);
+  left:calc(50% - 5rem);
+}
+.show-right .where div p.last{
+  position:absolute;
+  top:calc(60%);
+  left:calc(50% - 5rem);
+}
+.show-right .where div span{
+  display: inline-block;
+  width:1rem;
+}
+
+.show-right .friends div{
+  position:relative;
+  background-color: pink;
+}
+.show-right .friends .friends-container{
+  height:60%;
+  width:80%;
+  position: absolute;
+  top: 15%;
+  left:calc((100% - 80%) / 2);
+}
+.show-right .friends .friends-container div{
+  height:18%;
+  width:100%;
+  background-color: rgba(231, 224, 224, 0.452);
+  border-radius:10%/60%;
+  text-align: center;
+  margin-bottom: .7rem;
+}
+.show-right .friends .friends-container div .name{
+  font-size:1rem;
+  line-height: 2rem;
+  margin-right:1.2rem;
+}
+.show-right .friends .friends-container div .des{
+  font-size:.8rem;
+  color:gray;
+}
+
+
