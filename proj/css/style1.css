@@ -16,7 +16,7 @@ body{
   background-color: white;
   font-family: erikos,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragin;
   color:black;
-  z-index: 0;
+  z-index: 1;
   position:fixed;
 }
 .header .nav-bar{
@@ -50,7 +50,7 @@ body{
   font-size: 16px;
   font-weight: bolder;
   position:relative;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-bar a span{
   display:inline-block;
@@ -113,7 +113,7 @@ body{
   width:90vw;
   margin:0 auto;
   position:relative;
-  z-index: -1;
+  z-index: 0;
 }
 .content .main-string{
     color:white;

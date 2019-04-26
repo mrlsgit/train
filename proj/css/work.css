@@ -64,12 +64,22 @@
   height:40px;
   width:40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #b8b8b8;
+  box-shadow: 0 0 0 3px #b8b8b8 inset;
   text-align: center;
-  line-height: 40px;
+  line-height: 120%;
   font-size: 30px;
   font-weight: 900;
   color:#FFD03F;
+}
+.bottom-nav .logo:hover{
+  animation:bottomNavAni .3s;
+  animation-fill-mode: forwards;
+}
+@keyframes bottomNavAni {
+  to{
+    box-shadow: 0 0 0 40px #b8b8b8 inset;
+    color:white;
+  }
 }
 .bottom-nav span:not(.logo) {
   margin-left: 10px;
